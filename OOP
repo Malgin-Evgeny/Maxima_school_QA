@@ -1,0 +1,41 @@
+Завариваем  чай:
+
+// 1.Отфильтровать воду;
+WaterFilter filter;
+Water filteredWater = filter.filterOut()
+
+// 2.Набрать в чайник фильтрованной воды;
+Kettle kettle;
+kettle.addWater(filteredWater);
+
+// 3.Включить чайник;
+Kettle.switchOn();
+
+// 4.Взять чистую кружку;
+Cup cleancup;        
+take.cleancup (
+if (кружка == чистая)
+    {
+     ничего не делаем
+    }
+else if (кружка == грязная)
+    {
+     помыть кружку 
+    } )
+
+// 5.Положить в заварочный чайник чай и залить кипятком;
+Teapot teapot;
+teapot.addtea(kettle.getWater());
+
+// 6.Отфильтровать чай;
+TeaFilter teaFilter(teapot.gettea);
+if (чай == в пакетиках)
+{
+    ничего не делаем 
+}
+else if (чай == рассыпной )
+{
+     фильтруем через фильтр
+}
+// 7.Налить чай в кружку;
+cleancup (teaFilter.gettea)
