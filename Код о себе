@@ -1,0 +1,25 @@
+
+public class Main {
+    public static void main(String[] args) {
+        int age = 27;
+        double weight = 89.5;
+        double height = 186.5;
+        String name = "Evgeny";
+        String lastname = "Malgin";
+        String dateofBirth = "12.08.1995";
+        String work = "Driver";
+        String address = "Arzamas";
+        String education  = "higher";
+        String pasport = "2222 333333";
+
+        System.out.println(name + " " + lastname);
+        System.out.println(age + " " + "years");
+        System.out.println(dateofBirth);
+        System.out.println(weight + "кг");
+        System.out.println(height + "cm");
+        System.out.println(work);
+        System.out.println(address);
+        System.out.println(education + " " + "education");
+        System.out.println("pasport" + " " + pasport);
+    }
+}
