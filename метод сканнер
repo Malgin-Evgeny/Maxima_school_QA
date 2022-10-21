@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        String myString = "Набор любых символов";
+
+        String firstString= "Объединение ";
+        String secondString = "двух строк";
+        String sumOfTwoStrings = firstString + secondString;
+
+        String qliti = "This is my string, there are many like it but this one";
+
+        String myS = "This is my string, there are many like it but this one is mine";
+
+        String mySt = "This is my string, there are many like it but this one is mine";
+
+        String myStr = "This is my string, there are many like it but this one is mine";
+        String anotherStrin = "This one is not the same";
+        boolean areEqual = myStr.equals(anotherStrin);
+
+        String myStrin = "This is my string, there are many like it but this one is mine";
+        String newString = myStrin.concat(". The end");
+
+        String homeStreet = "New Str.";
+        int houseNr = 34;
+        int flatNr = 1;
+        String myAddress = String.format("I live at %s, house %d, flat %d", homeStreet, houseNr, flatNr);
+
+        String замена = "This is my string, there are many like it but this one is mine";
+        String заменитьна = замена.replace('i', 'a');
+        String newerString = заменитьна.replace("re", "");
+
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Введите произвольное значение с клавиатуры:");
+        scan.nextLine();
+        System.out.println(myString);
+        System.out.println(sumOfTwoStrings);
+        System.out.println("Колличество символов в строке равно " + qliti.length());
+        System.out.println(myS.isEmpty());
+        System.out.println("Символ строки по индексу 19 = " + mySt.charAt(19));
+        System.out.println(areEqual);
+        System.out.println(newString);
+        System.out.println(myAddress);
+        System.out.println(newerString);
+    }
+    }
