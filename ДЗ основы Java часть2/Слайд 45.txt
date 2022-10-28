@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class main {
+    public static void main(String[] args) {
+        int score;
+        do {
+            System.out.print("Please enter your score: ");
+            score = new Scanner(System.in).nextInt();
+            if (score <= 100) {
+                if (score >= 70) {
+                    System.out.println("Тест пройден");
+                } else {
+                    System.out.println("Тест не пройден");
+                }
+            } else
+                System.out.println("“Введено некорректное значение, повторите ввод");
+        } while (score > 100);
+    }
+}
