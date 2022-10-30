@@ -1,0 +1,11 @@
+import java.util.Scanner;
+        public class Lain {
+            public static void main(String[] args) {
+                Scanner scanner = new Scanner(System.in);
+                String stroka = scanner.nextLine();
+                char[] strToArray = stroka.toCharArray();
+                for(int i = 0; i < strToArray.length; i++) {
+                    System.out.println(strToArray[i]);
+                }
+            }
+        }
