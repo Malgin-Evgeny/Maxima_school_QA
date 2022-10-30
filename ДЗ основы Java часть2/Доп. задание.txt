@@ -1,0 +1,49 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Меню:");
+        System.out.println("1. Ввести имя");
+        System.out.println("2. Ввести фамилию");
+        System.out.println("3. Ввести год рождения");
+        System.out.println("4. Вывести информацию");
+        System.out.println("0. Выход");
+        int numer;
+        String numer1 = null;
+        String numer2 = null;
+        int numer3 = 0;
+        do {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Введите номер пункта меню: ");
+            numer = sc.nextInt();
+            switch (numer) {
+                case 1:
+                    Scanner sca = new Scanner(System.in);
+                    System.out.print("Введите имя: ");
+                    numer1 = sca.nextLine();
+                    break;
+                case 2:
+                    Scanner scar = new Scanner(System.in);
+                    System.out.print("Введите фамилию: ");
+                    numer2 = scar.nextLine();
+                    break;
+                case 3:
+                    System.out.println("Ввести год рождения");
+                    numer3 = sc.nextInt();
+                    break;
+                case 4:
+                    System.out.println("Имя: " + numer1);
+                    System.out.println("Фамилия: " + numer2 );
+                    System.out.println("Год рождения: " + numer3);
+                    break;
+                case 0:
+
+                    break;
+                default:
+                    System.out.println("Такого пункта меню нет, попробуйте другое число ");
+                    break;
+            }
+        }while (numer != 0);
+
+    }
+}
