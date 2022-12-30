@@ -1,7 +1,7 @@
 
 public class Main {
     public static void main(String[] args) {
-        Harakterstiki Evgeny = new Harakterstiki("Evgeny", "Malgin", 27,
+        Harakterstiki evgeny = new Harakterstiki("Evgeny", "Malgin", 27
                 "12.08.1995", "Driver", "Arzamas", 86.5f,
                 186.2, "Высшее", "2222 222222");
 
