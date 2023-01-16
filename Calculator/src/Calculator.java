@@ -20,11 +20,11 @@ public class Calculator {
         return result;
     }
 
-    public double div(double a, double b) throws ArithmeticException {
+    public double div(double a, double b) {
+        double result = a/b;
         if (b == 0) {
-            throw new ArithmeticException("Делить на 0 нельзя ");
+            throw new ArithmeticException("Divisor cannot div by zero");
         }
-        double result = a / b;
         return result;
     }
 
