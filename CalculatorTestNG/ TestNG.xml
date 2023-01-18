@@ -1,0 +1,8 @@
+<suite name="TestSuite">
+    <test name="TestCalculator">
+        <classes>
+            <class name="TestCalculatorPoz" />
+            <class name="TestCalculatorNeg" />
+        </classes>
+    </test>
+</suite>
