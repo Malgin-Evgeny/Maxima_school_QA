@@ -122,4 +122,28 @@ public class SubcategoryPageTest {
 
         driver.quit();
     }
+    
+    @Test
+    public void findNew(){
+        WebDriver driver = new ChromeDriver();
+        driver.manage().window().setSize(new Dimension(1980, 1020));
+        driver.get("https://litecart.stqa.ru/en/rubber-ducks-c-1/subcategory-c-2/");
+
+        String stikerNew = driver.findElement(By.cssSelector(".sticker.new")).getText();
+        Assert.assertEquals(stikerNew,"NEW");
+        
+        driver.quit();
+    }
+
+    @Test
+    public void findSale(){
+        WebDriver driver = new ChromeDriver();
+        driver.manage().window().setSize(new Dimension(1980, 1020));
+        driver.get("https://litecart.stqa.ru/en/rubber-ducks-c-1/subcategory-c-2/");
+        
+        String stikerSale = driver.findElement(By.cssSelector(".sticker.sale")).getText();
+        Assert.assertEquals(stikerSale,"SALE");
+
+        driver.quit();
+    }
 }
