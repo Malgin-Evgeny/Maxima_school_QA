@@ -4,7 +4,7 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="D:/���������������/SeleniumWebdriver2">
         <classes>
-            <class name="Test"></class>
+            <class name="SubcategoryPageTest"></class>
         </classes>
     </test>
 </suite>
