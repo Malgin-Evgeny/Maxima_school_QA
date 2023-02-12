@@ -50,11 +50,13 @@ public class FrameTest {
         driver.manage().window().setSize(new Dimension(1980, 1020));
 
         driver.get("https://canvas.apps.chrome/");
-
         WebElement drawingApp = driver.findElement(By.id("drawing-app"));
-        SearchContext drawingAppSR = getShadowRoot(drawingApp);
 
+        String initialWindow = driver.getWindowHandle();
+
+        SearchContext drawingAppSR = getShadowRoot(drawingApp);
         WebElement welcomeDialog = drawingAppSR.findElement(By.cssSelector("welcome-dialog"));
+
         SearchContext welcomeDialogSR = getShadowRoot(welcomeDialog);
 
         WebElement getStartedButton = welcomeDialogSR.findElement(By.cssSelector("#get-started"));
@@ -64,6 +66,23 @@ public class FrameTest {
 
         driver.switchTo().window(driver.getWindowHandles().toArray()[1].toString());
         driver.close();
+        driver.switchTo().window(initialWindow);
+
+        WebElement drawingCanvas = drawingAppSR.findElement(By.cssSelector("drawing-canvas"));
+        SearchContext drawingCanvasSR = getShadowRoot(drawingCanvas);
+
+        WebElement canvas = drawingCanvasSR.findElement(By.cssSelector("canvas"));
+
+        Thread.sleep(3000);
+        Actions actions = new Actions(driver);
+
+        actions.moveToElement(canvas).clickAndHold()
+                .moveByOffset(100,0)
+                .moveByOffset(0,100)
+                .moveByOffset(-100,0)
+                .moveByOffset(0,-100)
+                .release()
+                .perform();
     }
 
     private SearchContext getShadowRoot(WebElement rootElement) {
