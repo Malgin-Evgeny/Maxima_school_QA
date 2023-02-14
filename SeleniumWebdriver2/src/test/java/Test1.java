@@ -6,6 +6,7 @@ import org.testng.annotations.*;
 
 public class Test1 {
     WebDriver driver = new ChromeDriver();
+    HomePage homePage = new HomePage(driver);
 
     @BeforeTest
     public void create() {
@@ -16,7 +17,7 @@ public class Test1 {
 
     @Test
     public void joinHomePage() {
-        HomePage homePage = new HomePage(driver);
+        
         homePage.setButtonHome();
 
     }
@@ -24,7 +25,6 @@ public class Test1 {
     @Test
     public void joinRubberDucksPage() {
 
-        HomePage homePage = new HomePage(driver);
         RubberDucksPage rubberDucksPage = new RubberDucksPage(driver);
 
         homePage.setButtonRubberDucks();
