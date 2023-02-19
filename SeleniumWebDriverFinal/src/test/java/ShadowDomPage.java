@@ -17,11 +17,13 @@ public class ShadowDomPage {
     SearchContext drawingAppSR;
     SearchContext welcomeDialogSR;
     WebElement canvas;
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-    String initialWindow = driver.getWindowHandle();
+    WebDriverWait wait;
+    String initialWindow;
 
     public ShadowDomPage(WebDriver driver){
         this.driver = driver;
+        wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        initialWindow = driver.getWindowHandle();
     }
 
     public SearchContext joinDrawingaAppRoot(){
