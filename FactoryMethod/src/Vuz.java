@@ -15,7 +15,6 @@ public class Vuz {
     public Gradebook createPaperBook(){
         return new PaperBook();
     }
-
     public Gradebook createEBook(){
         return new Ebook();
     }
@@ -24,15 +23,10 @@ public class Vuz {
     public Diploma createBachelorD(){
         return new Bachelor();
     }
-
     public Diploma createSpecialistD(){
         return new Specialist();
     }
-
     public Diploma createMasterD(){
         return new Master();
     }
-
-
-
 }
