@@ -3,9 +3,7 @@ import Diplom.*;
 import StudentIDCard.*;
 
 public class Main {
-
     public static void main(String[] args) {
-
         Vuz idCard = new Vuz();
         StudentIDCard card01 = idCard.createECard();
         StudentIDCard card02 = idCard.createPaperCard();
