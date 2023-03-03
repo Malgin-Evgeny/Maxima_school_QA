@@ -16,6 +16,8 @@ public class Test1 {
 
     @Test
     public void joinHomePage() {
+        homePage.clickButtonRubberDucks();
+        Assert.assertEquals(driver.getCurrentUrl(), "https://litecart.stqa.ru/en/rubber-ducks-c-1/");
         homePage.clickButtonHome();
         Assert.assertEquals(driver.getCurrentUrl(), "https://litecart.stqa.ru/en/");
     }
