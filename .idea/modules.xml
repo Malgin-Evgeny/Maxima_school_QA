@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CalculatorTestNG/CalculatorTestNG.iml" filepath="$PROJECT_DIR$/CalculatorTestNG/CalculatorTestNG.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Decorator2.0/Decorator2.0.iml" filepath="$PROJECT_DIR$/Decorator2.0/Decorator2.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NewCalculator/NewCalculator.iml" filepath="$PROJECT_DIR$/NewCalculator/NewCalculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Parser/Parser.iml" filepath="$PROJECT_DIR$/Parser/Parser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SeleniumWebDriver1/SeleniumWebDriver1.iml" filepath="$PROJECT_DIR$/SeleniumWebDriver1/SeleniumWebDriver1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SeleniumWebDriverActions/SeleniumWebDriverActions.iml" filepath="$PROJECT_DIR$/SeleniumWebDriverActions/SeleniumWebDriverActions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SeleniumWebDriverAdvanced/SeleniumWebDriverAdvanced.iml" filepath="$PROJECT_DIR$/SeleniumWebDriverAdvanced/SeleniumWebDriverAdvanced.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SeleniumWebDriverFinal/SeleniumWebDriverFinal.iml" filepath="$PROJECT_DIR$/SeleniumWebDriverFinal/SeleniumWebDriverFinal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SeleniumWebdriver2/SeleniumWebdriver2.iml" filepath="$PROJECT_DIR$/SeleniumWebdriver2/SeleniumWebdriver2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Sholl.iml" filepath="$PROJECT_DIR$/.idea/Sholl.iml" />
+    </modules>
+  </component>
+</project>
