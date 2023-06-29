@@ -14,8 +14,6 @@ public class GsonParser {
         } catch (Exception e) {
             System.out.println("Parsing error " + e.toString());
         }
-
         return null;
     }
-
 }
