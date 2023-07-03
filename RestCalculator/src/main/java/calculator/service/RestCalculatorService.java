@@ -1,4 +1,4 @@
-package calculatorTests.service;
+package calculator.service;
 
 import java.math.BigDecimal;
 
