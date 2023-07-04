@@ -1,6 +1,6 @@
 package calculatorTests;
 
-import calculatorTests.service.RestCalculatorService;
+import calculator.service.RestCalculatorService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
