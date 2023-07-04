@@ -4,6 +4,7 @@ import calculator.service.RestCalculatorService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.MissingServletRequestParameterException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -50,5 +51,10 @@ public class RestCalculatorControllerImpl implements RestCalculatorController {
     @ExceptionHandler({NumberFormatException.class})
     public ResponseEntity<String> handleNumberFormatException(NumberFormatException ex) {
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Error: Incorrect input. Please enter the correct numbers.");
+    }
+
+    @ExceptionHandler({MissingServletRequestParameterException.class})
+    public ResponseEntity<String> handleEmptyStringException(MissingServletRequestParameterException ex) {
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Ошибка: Входная строка не может быть пустой.");
     }
 }

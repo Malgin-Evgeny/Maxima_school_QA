@@ -8,7 +8,7 @@ import java.math.BigDecimal;
 
 public interface RestCalculatorController {
     @GetMapping(value = "/add")
-    ResponseEntity<BigDecimal> add(@RequestParam BigDecimal a, @RequestParam BigDecimal b) throws EmptyStringException;
+    ResponseEntity<BigDecimal> add(@RequestParam BigDecimal a, @RequestParam BigDecimal b);
 
     @GetMapping("/subtract")
     ResponseEntity<BigDecimal> subtract(@RequestParam BigDecimal a, @RequestParam BigDecimal b);
