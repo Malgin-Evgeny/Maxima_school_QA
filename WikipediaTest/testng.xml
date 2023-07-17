@@ -4,6 +4,7 @@
     <test verbose="2" preserve-order="true" name="C:/Users/USER/Desktop/DnsProject">
         <classes>
             <class name="MainPageTest"/>
+            <class name="AuthorizationTest"/>
         </classes>
     </test>
 </suite>

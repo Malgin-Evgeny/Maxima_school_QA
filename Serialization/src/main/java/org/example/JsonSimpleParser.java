@@ -42,7 +42,6 @@ public class JsonSimpleParser {
             return root;
         } catch (Exception e) {
             System.out.println("Parsing error " + e.toString());
-            ;
         }
         return null;
     }
