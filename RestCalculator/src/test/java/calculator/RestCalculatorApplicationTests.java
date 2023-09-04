@@ -1,4 +1,4 @@
-package calculatorTests;
+package calculator;
 
 import calculator.service.RestCalculatorService;
 import org.junit.jupiter.api.Assertions;
@@ -9,6 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import java.math.BigDecimal;
 
 @SpringBootTest
+
 class RestCalculatorApplicationTests {
 
     @Autowired

@@ -10,7 +10,7 @@ import calculator.service.RestCalculatorService;
 import java.math.BigDecimal;
 
 @RestController
-@RequestMapping("calculatorTests/v1")
+@RequestMapping("calculator/v1")
 
 public class    RestCalculatorController {
     RestCalculatorService calculatorService;
