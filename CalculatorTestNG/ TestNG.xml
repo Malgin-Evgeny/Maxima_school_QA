@@ -1,8 +1,8 @@
 <suite name="TestSuite">
     <test name="TestCalculator">
         <classes>
-            <class name="TestCalculatorPoz" />
-            <class name="TestCalculatorNeg" />
+            <class name="testng.TestCalculatorPoz" />
+            <class name="testng.TestCalculatorNeg" />
         </classes>
     </test>
 </suite>
