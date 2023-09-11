@@ -5,8 +5,7 @@ import org.testng.annotations.Test;
 
 @Test
 @CucumberOptions(
-        glue = {"src/test/java/cucumber/glue"},
-        features = {"src/test/java/cucumber/features"}
+                features = {"src/test/resources/features"}
 )
 public class RunCucumberTest {
 }

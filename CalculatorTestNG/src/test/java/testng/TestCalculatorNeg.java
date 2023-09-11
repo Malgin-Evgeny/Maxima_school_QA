@@ -1,6 +1,6 @@
 package testng;
 
-import Calculator.Calculator;
+import calculator.Calculator;
 import org.testng.annotations.Test;
 
 public class TestCalculatorNeg {
