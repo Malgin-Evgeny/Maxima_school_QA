@@ -1,6 +1,9 @@
-package Calculator;
+package calculator;
 
 public class Calculator {
+
+    public Calculator() {
+    }
 
     private double result;
     public double add(double a, double b) {
